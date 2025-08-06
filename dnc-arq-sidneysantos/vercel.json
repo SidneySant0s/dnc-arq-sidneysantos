@@ -1,7 +1,0 @@
-{
- "buildCommand": "npm run build:safe",
-  "outputDirectory": "dist",
-  "ignoreCommand": "echo 'Skipping ignored files check'",
-  "cleanUrls": true,
-  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
-}
