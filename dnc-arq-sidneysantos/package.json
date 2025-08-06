@@ -2,11 +2,12 @@
   "name": "dnc-arq-sidneysantos",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
+  "type": "commonjs",
   "scripts": {
     "prepare": "chmod +x node_modules/.bin/vite",
     "dev": "vite",
-    "build": "vite build",
+    "build": "node node_modules/vite/bin/vite.js build",
+    "build:safe": "npm run prepare && node node_modules/vite/bin/vite.js build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
